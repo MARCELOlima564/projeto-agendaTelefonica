@@ -8,7 +8,25 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Agenda Telefônica</h1>
-    
+    <div id="container">
+        <h1>Agenda Telefônica</h1>
+        <div>
+            <input type="text" id="nomecompleto" placeholder="Nome Completo">
+            <input type="text" id="telefonefixo"  placeholder="Telefone Fixo" maxlength="11">
+            <input type="text" id="telefonecelular"  placeholder="Telefone Celular" maxlength="11">
+            <input type="text" id="url"  placeholder="URL da Foto">
+            <input type="date" id="datanascimento">
+            <input type="text" id="email" placeholder="E-mail">
+            <input type="text" id="cep" placeholder="CEP" maxlength="11">
+            <input type="text" id="cidade" placeholder="Cidade">
+            <input type="text" id="instagram" placeholder="@instagram">
+            <input type="text" id="github" placeholder="@github">
+
+            <button onclick="cadastrarAgenda()">Adicionar contato</button>
+
+            <div id="msg"></div>
+        </div>
+        <div id="container-lista"></div>
+    </div>
 </body>
 </html>
